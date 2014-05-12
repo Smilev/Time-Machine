@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Time Machine</title>
+		<link href="css/browser_action.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/browser_action.js" async></script>
+	</head>
+	<body>
+		<div id="mainPopup">
+			<h1>Hello Time Traveller!</h1>
+			<p>Select a date in the past to have a glimpse</p>
+			<form>
+				<div>
+					<input id="datePicker" type="date" name="Date">
+					<input id="setDateButton" type="button" value="Set Date" name="SetDate" />
+				</div>
+				<div id="reset">
+					<input id="removeDateButton" type="button" value="Return to Present" name="RemoveDate" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>	

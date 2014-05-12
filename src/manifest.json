@@ -1,0 +1,26 @@
+{
+  "name": "Time Machine",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension lets you browse the internet archive for a certain day in the past through the Wayback Machine Api",
+  "homepage_url": "https://archive.org/help/wayback_api.php",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Set Date",
+    "default_popup": "browser_action.html"
+  },
+  "permissions": [ "webRequest", "webRequestBlocking", "\u003Call_urls>", "tabs" ],
+  "omnibox": {
+    "keyword": "timemachine"
+  }
+}
